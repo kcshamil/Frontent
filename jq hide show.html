@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("p").toggle();
+                var buttonText = $("p").is(":visible") ? "hide" : "Show";
+                $("#toggle").text(buttonText);
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p>Shamil kc from cherukode</p>
+    <p>Al jamia arts & science clg</p>
+    <p>poopalam,perinthalmanna</p>
+
+    <button id="toggle">Hide</button>
+
+    
+</body>
+</html>
