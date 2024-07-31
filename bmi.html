@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>BMI</title>
+</head>
+<body align="center" style="margin-top: 150px;">
+    <script>
+        function popup1()
+        {
+            var k = document.getElementById('a')
+            var l = document.getElementById('b')
+            var g=k.value;
+            var h=l.value;
+            var z= h*h
+            var y= g/z
+            document.getElementById('adtn').innerHTML=y
+            if(y>=29.9)
+        {
+            document.getElementById('grd').innerHTML="obesity"
+        }
+        else if(y<29.9 && y>=24.9)
+        {
+            document.getElementById('grd').innerHTML="overweight"
+        }
+        else if(y<24.9 && y>=18.5)
+        {
+            document.getElementById('grd').innerHTML="Normal Weight"
+        }
+        else
+        {
+        document.getElementById('grd').innerHTML="UnderWeight"
+        }
+     }
+    </script>
+    <label for="">Enter Weight(in kg) :</label><input type="text" id='a' placeholder="weight"><br><br>
+    <label for="">Enter height(in m) :</label><input type="text" id='b' placeholder="Height"><br><br>
+    <br><br>
+    <button onclick="popup1()">Submit </button>
+    <p>YourBMI :</p><h1 id="adtn">***</h1>
+    <p>You are :</p><h1 id="grd">Nil</h1>
+    
+</body>
+</html>
