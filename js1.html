@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script>
+        function popup1(x)
+        {
+            var y = x.value.length
+            if(y>=6 && y<=12)
+        {
+            alert("Sucessfull")
+        }
+        else
+        {
+            alert("invalid")
+        }
+        }
+    </script>
+</head>
+<body align="center" style="margin-top: 150px;">
+
+    <label for="">Enter your Phone No :</label><input type="" id='a' placeholder="Enter 6-12 Characters"><br><br>
+    <br>
+    <br>
+    <button onclick="popup1(document.getElementById('a'))">Submit</button>  
+</body>
+</html>
